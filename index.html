@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="text-center mt-5 text-info ">
+        <h1>Welcome to to do list app </h1>
+    </header>
+    <!--end header  -->
+    <div class="main-button container-fluid md-6">
+        <div class="text-center">
+            <button class="start btn btn-info"> add new tasks </button>
+        </div>
+    </div>
+     <!--end main button -->
+    <div class="mt-5 modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Write your new task</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center mt-2 mb-2">
+              <input type="text" placeholder="enter your task">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="add btn btn-primary">Add task</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- end modal -->
+<section class="container mt-5 text-center ">
+    <div id="notasks" class="pt-2 card col-md-9 ">
+           <div class=" mb-3 alert alert-danger col-sm-9  ">
+            there is no tasks added
+           </div>
+           
+    </div>  
+
+
+    <div id="tasks" class="none pt-2 col-md-9 card  ">
+           
+    </div>
+    
+</section>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
